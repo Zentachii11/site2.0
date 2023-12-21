@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/admin_panel.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header-wrapper">
+          <div class="header-logo">
+            <a class="header-logo-link" href="index.html">
+              <img class="header-logo-pic" alt="" src="./img/header_logo.svg">
+            </a>
+          </div>
+          <nav class="header-nav">
+            <ul class="header-list">
+              <li class="header-item">
+                <a href="./catalog.html" class="header-link">КАТАЛОГ</a>
+              </li>
+              <li class="header-item">
+                <a href="./services.html" class="header-link">УСЛУГИ</a>
+              </li>
+              <li class="header-item">
+                <a href="./about_company.html" class="header-link">О КОМПАНИИ</a>
+              </li>
+            </ul>
+          </nav>
+          
+          <button class="profile" id="profile">
+            <img class="profile-child" alt="" src="./img/profile.svg">
+          </button>
+
+        </div>
+      </div>
+    </header>
+    <form id="admin_panelForm">
+      <main class="main">
+        <div class="main-flex">
+          <div class="main-text">ДОБАВИТЬ ПК</div>
+          <div class="main-input-block">
+            <input type="text" id="titleInput" class="main-input" placeholder="Название">
+            <input type="text" id="descriptionInput" class="main-input" placeholder="Описание">
+            <input type="text" id="gpuInput" class="main-input" placeholder="Видеокарта">
+            <input type="text" id="cpuInput" class="main-input" placeholder="Процессор">
+            <input type="text" id="coolingInput" class="main-input" placeholder="Охлаждение">
+            <input type="text" id="ramInput" class="main-input" placeholder="Оперативная память">
+            <input type="text" id="priceInput" class="main-input" placeholder="Цена">
+            <input type="text" id="price_per_monthInput" class="main-input" placeholder="Цена/мес">
+          </div>
+        </div>
+        <div class="main-flex">
+          <button class="main-btn" id="">
+            <div class="main-btn-text">ДОБАВИТЬ</div>
+          </button>
+        </div>
+        <div class="main-input-block2">
+          <select id="computerSelect" class="main-input"></select>
+        </div>
+        <div class="main-flex">
+          <button class="main-btn2" id="deleteComputerBtn">
+            <div class="main-btn-text">УДАЛИТЬ</div>
+          </button>
+        </div>
+      </main>
+    </form>
+    
+    <script src="./scripts/profile.js"></script>
+    <script src="./scripts/admin_panel.js"></script>
+  </body>
+</html>
